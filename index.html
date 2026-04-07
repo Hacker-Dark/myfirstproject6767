@@ -1,12 +1,251 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud shii</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mordecai Amehson — GitHub README Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #050505;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .rm-root {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      font-family: 'Space Mono', monospace;
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      max-width: 640px;
+      width: 100%;
+    }
+
+    .rm-root::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #fff 0%, #555 60%, transparent 100%);
+    }
+
+    .rm-header {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 2rem;
+      border-bottom: 0.5px solid #222;
+      padding-bottom: 1.5rem;
+    }
+
+    .rm-tag {
+      font-size: 11px;
+      color: #555;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .rm-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .rm-title {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+      letter-spacing: 0.08em;
+    }
+
+    .rm-bio {
+      font-size: 13px;
+      color: #aaa;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      max-width: 520px;
+    }
+
+    .rm-bio span {
+      color: #e8e8e8;
+      font-weight: 700;
+    }
+
+    .rm-section-label {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: #444;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .rm-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .rm-skill {
+      font-size: 11px;
+      padding: 4px 12px;
+      border: 0.5px solid #333;
+      border-radius: 2px;
+      color: #ccc;
+      letter-spacing: 0.05em;
+      background: #111;
+    }
+
+    .rm-skill.highlight {
+      border-color: #fff;
+      color: #fff;
+      background: #111;
+    }
+
+    .rm-projects {
+      margin-bottom: 2rem;
+    }
+
+    .rm-project {
+      border: 0.5px solid #1e1e1e;
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 8px;
+      background: #0f0f0f;
+    }
+
+    .rm-project-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .rm-project-desc {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .rm-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      border-top: 0.5px solid #1a1a1a;
+      padding-top: 1.5rem;
+    }
+
+    .rm-link {
+      font-size: 11px;
+      color: #555;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .rm-link:hover { color: #fff; }
+
+    .rm-dot {
+      width: 5px;
+      height: 5px;
+      background: #333;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .rm-link.active .rm-dot { background: #fff; }
+
+    .rm-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .rm-status-dot {
+      width: 6px;
+      height: 6px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .rm-status-text {
+      font-size: 11px;
+      color: #4ade80;
+      letter-spacing: 0.08em;
+    }
+  </style>
 </head>
 <body>
-    <h1>Happypenis</h1>
-    <p1>Isaac thinks he can DDos my server but FAHHH it ain't working</p1>
+  <div class="rm-root">
+    <div class="rm-header">
+      <span class="rm-tag">github / mordecai-amehson</span>
+      <div class="rm-name">Mordecai<br>Amehson</div>
+      <div class="rm-title">DevOps & Cloud Engineer</div>
+    </div>
+
+    <div class="rm-status">
+      <div class="rm-status-dot"></div>
+      <span class="rm-status-text">Open to opportunities</span>
+    </div>
+
+    <p class="rm-bio">
+      Building the infrastructure that keeps things running.
+      Focused on <span>cloud automation</span>, <span>CI/CD pipelines</span>,
+      and making deployments boring — in the best way.
+    </p>
+
+    <div class="rm-section-label">Tools & Stack</div>
+    <div class="rm-skills">
+      <span class="rm-skill highlight">AWS</span>
+      <span class="rm-skill highlight">GCP</span>
+      <span class="rm-skill highlight">Docker</span>
+      <span class="rm-skill">Git</span>
+      <span class="rm-skill">Bash</span>
+      <span class="rm-skill">Python</span>
+      <span class="rm-skill">Render</span>
+      <span class="rm-skill">GitHub Actions</span>
+      <span class="rm-skill">CI/CD</span>
+    </div>
+
+    <div class="rm-projects">
+      <div class="rm-section-label">Projects</div>
+      <div class="rm-project">
+        <div class="rm-project-name">Auto-deploy Pipeline</div>
+        <div class="rm-project-desc">Dockerized web app with GitHub Actions CI/CD — auto-deploys to Render on every push. End-to-end DevOps workflow.</div>
+      </div>
+    </div>
+
+    <div class="rm-links">
+      <a class="rm-link active" href="https://x.com/theonlym0rdecai" target="_blank">
+        <span class="rm-dot"></span> X / Twitter
+      </a>
+      <a class="rm-link" href="https://linkedin.com/in/mordecai-amehson" target="_blank">
+        <span class="rm-dot"></span> LinkedIn
+      </a>
+      <a class="rm-link" href="mailto:amehsonmordecai07@gmail.com">
+        <span class="rm-dot"></span> Email
+      </a>
+    </div>
+  </div>
 </body>
 </html>
